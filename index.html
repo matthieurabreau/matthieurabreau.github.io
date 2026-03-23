@@ -12,143 +12,148 @@
 </head>
 <body>
 
-    <!-- ROCKET + TRAIL -->
-    <svg class="rocket-svg" viewBox="0 0 1440 7000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#4285f4" stop-opacity="0.6"/>
-                <stop offset="100%" stop-color="#4285f4" stop-opacity="0.05"/>
-            </linearGradient>
-        </defs>
-        <path id="rocketTrail"
-            d="M720,50 C1100,300 200,700 350,1100 S1200,1500 1000,1900 S200,2200 400,2600 S1200,3000 900,3400 S200,3800 450,4200 S1100,4600 800,5000 S300,5400 500,5800 S900,6200 720,6600"
-            fill="none" stroke="url(#lineGrad)" stroke-width="2"
-            stroke-dasharray="2000" stroke-dashoffset="2000"
-            stroke-linecap="round"
-            id="trailDraw"/>
-        <path id="rocketPath"
-            d="M720,50 C1100,300 200,700 350,1100 S1200,1500 1000,1900 S200,2200 400,2600 S1200,3000 900,3400 S200,3800 450,4200 S1100,4600 800,5000 S300,5400 500,5800 S900,6200 720,6600"
-            fill="none" stroke="none"/>
-    </svg>
-    <div class="rocket" id="rocket">🚀</div>
-
     <nav>
         <a href="#" class="nav-logo">Matthieu Rabreau</a>
         <div class="nav-links">
+            <a href="#templates">Exemples</a>
             <a href="#services">Services</a>
-            <a href="#approche">Approche</a>
-            <a href="#contact" class="nav-cta">Discutons</a>
+            <a href="#contact" class="nav-cta">Commencer</a>
         </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- ═══ HERO ═══ -->
     <section class="hero">
-        <p class="hero-sub reveal">Création de sites web professionnels</p>
-        <h1 class="reveal d1">Donnez à votre activité<br>la visibilité qu'elle mérite</h1>
-        <a href="#contact" class="btn reveal d2">Commencer</a>
-        <div class="hero-images reveal d3">
-            <div class="hero-img-desktop">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=85" alt="Site web sur desktop">
+        <!-- Floating device images -->
+        <div class="floating-objects">
+            <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=350&q=85" alt="Laptop" class="float-obj obj-1 reveal">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=250&q=85" alt="Phone" class="float-obj obj-2 reveal d1">
+            <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300&q=85" alt="Tablet" class="float-obj obj-3 reveal d2">
+            <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=280&q=85" alt="Laptop side" class="float-obj obj-4 reveal d1">
+        </div>
+        <div class="hero-content">
+            <p class="hero-label reveal">Sites web</p>
+            <h1 class="reveal d1">Votre vitrine<br>digitale, en mieux</h1>
+            <a href="#contact" class="btn-outline reveal d2">Commencer</a>
+        </div>
+        <div class="hero-tabs reveal d3">
+            <a href="#templates" class="tab active">Templates</a>
+            <a href="#services" class="tab">Design sur-mesure</a>
+            <a href="#approche" class="tab">Approche</a>
+        </div>
+    </section>
+
+    <!-- ═══ TEMPLATES / EXEMPLES ═══ -->
+    <section id="templates" class="templates">
+        <div class="section-head reveal">
+            <h2>Des sites qui<br>inspirent confiance</h2>
+            <p>Voici le type de résultat que je livre. Chaque site est unique et conçu sur-mesure.</p>
+        </div>
+        <div class="templates-grid">
+            <div class="template-card reveal">
+                <div class="template-browser">
+                    <div class="browser-bar"><span></span><span></span><span></span></div>
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=85" alt="Site restaurant">
+                </div>
+                <h3>Restaurant</h3>
+                <p>Menu, réservation, ambiance</p>
             </div>
-            <div class="hero-img-mobile">
-                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&q=85" alt="Site web sur mobile">
+            <div class="template-card reveal d1">
+                <div class="template-browser">
+                    <div class="browser-bar"><span></span><span></span><span></span></div>
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700&q=85" alt="Site salon">
+                </div>
+                <h3>Salon de beauté</h3>
+                <p>Portfolio, prestations, réservation</p>
+            </div>
+            <div class="template-card reveal d2">
+                <div class="template-browser">
+                    <div class="browser-bar"><span></span><span></span><span></span></div>
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=85" alt="Site business">
+                </div>
+                <h3>Business</h3>
+                <p>Landing page, services, contact</p>
             </div>
         </div>
     </section>
 
-    <!-- TEXT SECTION -->
-    <section class="text-section">
-        <h2 class="reveal">Un site sur-mesure,<br>sans la complexité.</h2>
-        <p class="reveal d1">Je crée des sites modernes et performants pour les commerces, artisans et indépendants. Design unique, code propre, résultat professionnel.</p>
+    <!-- ═══ FLOATING SHOWCASE ═══ -->
+    <section class="showcase">
+        <div class="showcase-inner">
+            <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=500&q=85" alt="Écran design" class="showcase-img img-left reveal">
+            <div class="showcase-text reveal d1">
+                <h2>Du design<br>qui convertit</h2>
+                <p>Chaque pixel a un but. Un design clair et moderne qui transforme les visiteurs en clients.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&q=85" alt="Mobile" class="showcase-img img-right reveal d2">
+        </div>
     </section>
 
-    <!-- IMAGE FULL -->
-    <div class="img-full reveal">
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=85" alt="Espace de travail moderne">
-    </div>
-
-    <!-- SERVICES -->
+    <!-- ═══ SERVICES ═══ -->
     <section id="services" class="services">
-        <h2 class="reveal">Tout est inclus</h2>
+        <div class="section-head reveal">
+            <h2>Tout est inclus</h2>
+        </div>
         <div class="services-grid">
-            <div class="service-item reveal">
-                <h3>Design sur-mesure</h3>
-                <p>Un design unique, pensé pour votre activité. Pas de template générique.</p>
+            <div class="service reveal">
+                <div class="service-icon">✏️</div>
+                <h3>Design unique</h3>
+                <p>Un site qui reflète votre identité. Aucun template générique.</p>
             </div>
-            <div class="service-item reveal d1">
+            <div class="service reveal d1">
+                <div class="service-icon">📱</div>
                 <h3>Responsive</h3>
-                <p>Rendu parfait sur mobile, tablette et ordinateur.</p>
+                <p>Parfait sur mobile, tablette et ordinateur.</p>
             </div>
-            <div class="service-item reveal d2">
-                <h3>Référencement</h3>
-                <p>Optimisé pour Google. Vos clients vous trouvent facilement.</p>
+            <div class="service reveal d2">
+                <div class="service-icon">⚡</div>
+                <h3>Performant</h3>
+                <p>Chargement rapide, code optimisé, bon SEO.</p>
             </div>
-            <div class="service-item reveal d3">
+            <div class="service reveal d3">
+                <div class="service-icon">🔑</div>
                 <h3>Clé en main</h3>
-                <p>Design, code, hébergement, mise en ligne. Je gère tout.</p>
+                <p>Design, développement, mise en ligne. Je gère tout.</p>
             </div>
         </div>
     </section>
 
-    <!-- SPLIT: IMAGE + TEXT -->
-    <section class="split">
-        <div class="split-img reveal">
-            <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&q=85" alt="Travail sur écran">
-        </div>
-        <div class="split-text reveal d1">
-            <h2>Conçu pour<br>convertir</h2>
-            <p>Chaque élément est pensé pour transformer vos visiteurs en clients. Design clair, navigation intuitive, appels à l'action efficaces.</p>
-            <a href="#contact" class="text-link">Démarrer un projet →</a>
-        </div>
-    </section>
-
-    <!-- SPLIT REVERSE -->
-    <section class="split reverse">
-        <div class="split-img reveal">
-            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&q=85" alt="Code et design">
-        </div>
-        <div class="split-text reveal d1">
-            <h2>Rapide,<br>performant</h2>
-            <p>Code léger, temps de chargement minimal. Un site rapide, c'est un site que Google met en avant et que vos visiteurs apprécient.</p>
-            <a href="#services" class="text-link">Voir les services →</a>
-        </div>
-    </section>
-
-    <!-- APPROACH -->
+    <!-- ═══ APPROCHE ═══ -->
     <section id="approche" class="approche">
-        <h2 class="reveal">Comment ça marche</h2>
+        <div class="section-head reveal">
+            <h2>Comment ça marche</h2>
+        </div>
         <div class="steps-row">
             <div class="step reveal">
-                <span class="step-n">1</span>
+                <span class="step-n">01</span>
                 <h3>On échange</h3>
-                <p>Vous me décrivez votre activité et vos besoins. Je vous envoie un devis gratuit.</p>
+                <p>Vous me décrivez votre projet. Devis gratuit sous 24h.</p>
             </div>
             <div class="step reveal d1">
-                <span class="step-n">2</span>
-                <h3>Je crée votre site</h3>
-                <p>Design et développement sur-mesure. Vous validez à chaque étape.</p>
+                <span class="step-n">02</span>
+                <h3>Je crée</h3>
+                <p>Design et développement. Vous validez chaque étape.</p>
             </div>
             <div class="step reveal d2">
-                <span class="step-n">3</span>
-                <h3>Mise en ligne</h3>
-                <p>Votre site est publié, référencé et prêt à recevoir vos clients.</p>
+                <span class="step-n">03</span>
+                <h3>En ligne</h3>
+                <p>Publication, référencement. Vos clients vous trouvent.</p>
             </div>
         </div>
     </section>
 
-    <!-- IMAGE FULL 2 -->
-    <div class="img-full reveal">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&q=85" alt="Équipe">
-    </div>
-
-    <!-- CTA -->
-    <section id="contact" class="cta">
-        <h2 class="reveal">Prêt à lancer<br>votre site ?</h2>
-        <p class="reveal d1">Envoyez-moi un message — je réponds sous 24h.</p>
-        <a href="mailto:matthieurabreau@gmail.com" class="btn reveal d2">matthieurabreau@gmail.com</a>
+    <!-- ═══ CONTACT CTA ═══ -->
+    <section id="contact" class="contact">
+        <div class="contact-bg">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&q=85" alt="Collaboration">
+        </div>
+        <div class="contact-content reveal">
+            <h2>Lancez votre projet</h2>
+            <p>Décrivez-moi votre activité — je reviens vers vous avec une proposition sous 24h.</p>
+            <a href="mailto:matthieurabreau@gmail.com" class="btn-outline light">Me contacter</a>
+        </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ═══ FOOTER ═══ -->
     <footer>
         <div class="footer-top">
             <div class="footer-col">
@@ -170,58 +175,20 @@
     </footer>
 
     <script>
-        // Reveal on scroll
         const obs = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
         document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-        // Nav
+        // Parallax floating objects
         window.addEventListener('scroll', () => {
-            document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 50);
+            const s = window.scrollY;
+            document.querySelectorAll('.float-obj').forEach((obj, i) => {
+                const speed = [0.04, 0.07, 0.05, 0.06][i];
+                obj.style.transform = `translateY(${s * -speed}px)`;
+            });
+            document.querySelector('nav').classList.toggle('scrolled', s > 50);
         });
-
-        // Rocket following path + trail drawing
-        const rocketPath = document.getElementById('rocketPath');
-        const trailDraw = document.getElementById('trailDraw');
-        const rocket = document.getElementById('rocket');
-        const totalLength = rocketPath.getTotalLength();
-
-        // Set trail dash
-        trailDraw.style.strokeDasharray = totalLength;
-        trailDraw.style.strokeDashoffset = totalLength;
-
-        function animateRocket() {
-            const scrollTop = window.scrollY;
-            const docHeight = document.body.scrollHeight - window.innerHeight;
-            const progress = Math.min(Math.max(scrollTop / docHeight, 0), 1);
-
-            // Draw trail up to current point
-            trailDraw.style.strokeDashoffset = totalLength * (1 - progress);
-
-            // Move rocket
-            const point = rocketPath.getPointAtLength(progress * totalLength);
-            const svgRect = document.querySelector('.rocket-svg').getBoundingClientRect();
-            const svgW = 1440;
-            const svgH = 7000;
-            const scaleX = svgRect.width / svgW;
-            const scaleY = document.body.scrollHeight / svgH;
-
-            const x = point.x * scaleX;
-            const y = point.y * scaleY;
-
-            // Tangent for rotation
-            const next = rocketPath.getPointAtLength(Math.min((progress + 0.003) * totalLength, totalLength));
-            const angle = Math.atan2(next.y - point.y, next.x - point.x) * 180 / Math.PI;
-
-            rocket.style.left = x + 'px';
-            rocket.style.top = y + 'px';
-            rocket.style.transform = `translate(-50%, -50%) rotate(${angle + 45}deg)`;
-        }
-
-        window.addEventListener('scroll', animateRocket);
-        window.addEventListener('resize', animateRocket);
-        animateRocket();
     </script>
 </body>
 </html>
