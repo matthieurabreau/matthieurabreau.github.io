@@ -3,112 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthieu Rabreau — Création de sites web</title>
-    <meta name="description" content="Création de sites web professionnels pour commerces et entreprises. Sites vitrines modernes, rapides et accessibles.">
+    <title>Matthieu Rabreau</title>
+    <meta name="description" content="Matthieu Rabreau — Passionné d'informatique, développement & technologie.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Share+Tech+Mono&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="scanline"></div>
+    <div class="noise"></div>
+
     <nav>
-        <a href="#" class="logo"><span class="logo-bracket">[</span> matthieu<span class="logo-accent">.rabreau</span> <span class="logo-bracket">]</span></a>
+        <a href="#" class="logo">matthieu<span class="accent">_</span>rabreau</a>
         <div class="nav-links">
-            <a href="#services">Services</a>
-            <a href="#tarifs">Tarifs</a>
-            <a href="#contact" class="btn-nav">Contact</a>
+            <a href="#about">about</a>
+            <a href="#skills">skills</a>
+            <a href="#projects">projects</a>
+            <a href="#contact" class="btn-nav">contact</a>
         </div>
     </nav>
 
     <section class="hero">
         <div class="hero-content">
-            <p class="hero-tag"><span class="terminal-prompt">&gt;_</span> Freelance &mdash; Nantes</p>
-            <h1 class="glitch-text">Je crée le site web<br>de votre commerce.</h1>
-            <p class="hero-sub">Un site moderne, rapide et qui vous ressemble.<br>À partir de <strong>99 &euro;</strong>.</p>
+            <div class="terminal-window">
+                <div class="terminal-bar">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title font-mono-ui">matthieu@rabreau ~ </span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span class="prompt">$</span> whoami</p>
+                    <p class="terminal-output typing-effect">Matthieu Rabreau</p>
+                    <p class="terminal-line"><span class="prompt">$</span> cat about.txt</p>
+                    <p class="terminal-output">17 ans · Nantes · Passionné de tech</p>
+                    <p class="terminal-line"><span class="prompt">$</span> cat skills.json | head</p>
+                    <p class="terminal-output json-output">{ "code": true, "curious": true, "motivated": <span class="accent">∞</span> }</p>
+                </div>
+            </div>
+            <h1>Je construis des trucs<br>avec du <span class="accent">code</span>.</h1>
+            <p class="hero-sub">Développement web, automatisation, IA — j'apprends vite et je livre du propre.</p>
             <div class="hero-actions">
-                <a href="#contact" class="btn-primary">Demander un devis gratuit <span class="btn-arrow">&rarr;</span></a>
+                <a href="#contact" class="btn-primary">Me contacter <span class="btn-arrow">&rarr;</span></a>
+                <a href="#projects" class="btn-secondary">Voir mes projets</a>
             </div>
             <div class="hero-status">
                 <span class="status-dot"></span>
-                <span class="status-text font-mono-ui">disponible pour nouveaux projets</span>
+                <span class="status-text font-mono-ui">disponible pour projets & missions</span>
             </div>
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <section id="services" class="services">
-        <p class="section-tag font-mono-ui">// services</p>
-        <h2>Ce que je propose</h2>
-        <div class="cards">
-            <div class="card">
-                <div class="card-icon">&#9874;</div>
-                <h3>Site vitrine</h3>
-                <p>Présentez votre activité avec un site élégant : vos services, vos horaires, votre localisation. Tout ce qu'il faut pour être trouvé en ligne.</p>
+    <section id="about" class="about">
+        <p class="section-tag font-mono-ui">// à propos</p>
+        <h2>Qui suis-je ?</h2>
+        <div class="about-grid">
+            <div class="about-card main-card">
+                <p>J'ai <strong>17 ans</strong>, je suis basé à <strong>Nantes</strong>, et l'informatique c'est pas juste un hobby — c'est ce que je fais <strong>tous les jours</strong>.</p>
+                <p>Je code, j'expérimente, je casse des trucs, je les répare. Du web au scripting en passant par l'IA, je touche à tout ce qui est tech.</p>
+                <p>En parallèle, spé <strong>maths & physique</strong> — parce que la logique, c'est aussi du code.</p>
             </div>
-            <div class="card">
-                <div class="card-icon">&#9749;</div>
-                <h3>Restaurant & food</h3>
-                <p>Menu en ligne, photos de vos plats, lien vers vos réseaux. Un site qui donne envie de pousser la porte.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">&#10024;</div>
-                <h3>Salon & bien-être</h3>
-                <p>Coiffeur, esthéticienne, coach... Montrez votre savoir-faire et permettez à vos clients de vous contacter facilement.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">&#128736;</div>
-                <h3>Artisan & services</h3>
-                <p>Plombier, électricien, photographe... Un site simple et efficace pour inspirer confiance et générer des contacts.</p>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <span class="stat-number accent">∞</span>
+                    <span class="stat-label">heures de code</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">mode veille tech</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number accent">&lt;/&gt;</span>
+                    <span class="stat-label">clean code only</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">limites</span>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <section id="tarifs" class="pricing">
-        <p class="section-tag font-mono-ui">// tarifs</p>
-        <h2>Tarifs simples</h2>
-        <p class="pricing-sub">Pas d'abonnement, pas de frais cachés. Vous payez une fois.</p>
-        <div class="pricing-cards">
-            <div class="pricing-card">
-                <h3>Essentiel</h3>
-                <div class="price">99 &euro;</div>
-                <ul>
-                    <li>Site one-page</li>
-                    <li>Design sur-mesure</li>
-                    <li>Adapté mobile</li>
-                    <li>Formulaire de contact</li>
-                    <li>Mise en ligne incluse</li>
-                </ul>
-                <a href="#contact" class="btn-secondary">Choisir</a>
+    <section id="skills" class="skills">
+        <p class="section-tag font-mono-ui">// compétences</p>
+        <h2>Stack technique</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">&#9000;</span>
+                    <h3>Développement Web</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
             </div>
-            <div class="pricing-card featured">
-                <div class="badge">Populaire</div>
-                <h3>Pro</h3>
-                <div class="price">149 &euro;</div>
-                <ul>
-                    <li>Jusqu'à 5 pages</li>
-                    <li>Design sur-mesure</li>
-                    <li>Adapté mobile</li>
-                    <li>Formulaire de contact</li>
-                    <li>Galerie photos</li>
-                    <li>Lien Google Maps</li>
-                    <li>Mise en ligne incluse</li>
-                </ul>
-                <a href="#contact" class="btn-primary">Choisir</a>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">&#9881;</span>
+                    <h3>Automatisation</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Bash</span>
+                    <span class="tag">Scripts</span>
+                    <span class="tag">APIs</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
             </div>
-            <div class="pricing-card">
-                <h3>Sur-mesure</h3>
-                <div class="price">Sur devis</div>
-                <ul>
-                    <li>Pages illimitées</li>
-                    <li>Fonctionnalités avancées</li>
-                    <li>Réservation en ligne</li>
-                    <li>Menu / catalogue</li>
-                    <li>Tout le reste inclus</li>
-                </ul>
-                <a href="#contact" class="btn-secondary">Me contacter</a>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">&#9883;</span>
+                    <h3>Intelligence Artificielle</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">Prompting</span>
+                    <span class="tag">Claude</span>
+                    <span class="tag">GPT</span>
+                    <span class="tag">Agents IA</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">&#128274;</span>
+                    <h3>Systèmes & Réseau</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">Linux</span>
+                    <span class="tag">macOS</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Terminal</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="projects" class="projects">
+        <p class="section-tag font-mono-ui">// projets</p>
+        <h2>Ce que j'ai construit</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-icon">&#128193;</span>
+                    <div class="project-links">
+                        <span class="font-mono-ui live-badge"><span class="status-dot-small"></span> live</span>
+                    </div>
+                </div>
+                <h3>Portfolio personnel</h3>
+                <p>Ce site. Construit from scratch en HTML/CSS pur. Design dark tech, responsive, rapide.</p>
+                <div class="skill-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Design</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-icon">&#129302;</span>
+                </div>
+                <h3>Projets IA</h3>
+                <p>Automatisations et agents IA pour résoudre des problèmes concrets. Scripts intelligents, intégrations API.</p>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Claude API</span>
+                    <span class="tag">Automation</span>
+                </div>
+            </div>
+            <div class="project-card coming-soon">
+                <div class="project-header">
+                    <span class="project-icon">&#128640;</span>
+                    <span class="font-mono-ui">coming soon</span>
+                </div>
+                <h3>En cours...</h3>
+                <p>Toujours en train de builder. Nouveaux projets en préparation — stay tuned.</p>
+                <div class="skill-tags">
+                    <span class="tag">???</span>
+                </div>
             </div>
         </div>
     </section>
@@ -117,26 +200,33 @@
 
     <section id="contact" class="contact">
         <p class="section-tag font-mono-ui">// contact</p>
-        <h2>Un projet ? Parlons-en.</h2>
-        <p class="contact-sub">Décrivez votre activité et ce dont vous avez besoin. Je vous réponds sous 24h.</p>
-        <form action="https://formsubmit.co/matthieurabreau@gmail.com" method="POST" class="contact-form">
-            <input type="hidden" name="_subject" value="Nouveau message depuis Matthieu Rabreau">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://matthieurabreau.github.io/">
-            <div class="form-row">
-                <input type="text" name="name" placeholder="Votre nom" required>
-                <input type="email" name="email" placeholder="Votre email" required>
-            </div>
-            <input type="text" name="business" placeholder="Votre activité (ex: restaurant, salon de coiffure...)">
-            <textarea name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
-            <button type="submit" class="btn-primary">Envoyer <span class="btn-arrow">&rarr;</span></button>
-        </form>
+        <h2>On travaille ensemble ?</h2>
+        <p class="contact-sub">Un projet, une idée, une mission — je suis dispo.</p>
+        <div class="contact-links">
+            <a href="mailto:matthieurabreau@gmail.com" class="contact-card">
+                <span class="contact-icon">&#9993;</span>
+                <span class="contact-label font-mono-ui">email</span>
+                <span class="contact-value">matthieurabreau@gmail.com</span>
+                <span class="btn-arrow">&rarr;</span>
+            </a>
+            <a href="https://github.com/matthieurabreau" target="_blank" class="contact-card">
+                <span class="contact-icon">&#128187;</span>
+                <span class="contact-label font-mono-ui">github</span>
+                <span class="contact-value">github.com/matthieurabreau</span>
+                <span class="btn-arrow">&rarr;</span>
+            </a>
+        </div>
     </section>
 
     <footer>
-        <div class="footer-content">
-            <span class="font-hacker">[ matthieu.rabreau ]</span>
-            <p>&copy; 2026 Matthieu Rabreau &mdash; matthieurabreau@gmail.com</p>
+        <div class="footer-grid">
+            <div class="footer-left">
+                <span class="font-hacker">matthieu_rabreau</span>
+                <p>Nantes, France</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 &mdash; Built with code & caffeine.</p>
+            </div>
         </div>
     </footer>
 </body>
