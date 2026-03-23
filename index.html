@@ -3,168 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthieu Rabreau</title>
-    <meta name="description" content="Matthieu Rabreau — Développement, technologie & informatique.">
+    <title>Matthieu Rabreau — Création de sites web</title>
+    <meta name="description" content="Création de sites web modernes et professionnels.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated background -->
-    <div class="bg-wrapper">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
-        <div class="grid-overlay"></div>
-    </div>
 
     <nav>
-        <a href="#" class="logo">matthieu.</a>
+        <span class="nav-logo">MR</span>
         <div class="nav-links">
-            <a href="#about">À propos</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projets</a>
-            <a href="#contact">Contact</a>
+            <a href="#work">Réalisations</a>
+            <a href="#services">Services</a>
+            <a href="#contact" class="nav-cta">Discutons</a>
         </div>
     </nav>
 
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-badge fade-up">
-                <span class="dot"></span>
-                Disponible
-            </div>
-            <h1 class="fade-up delay-1">
-                <span class="line">Matthieu</span>
-                <span class="line gradient-text">Rabreau</span>
+        <div class="hero-text">
+            <h1 class="reveal">
+                <span class="line">Des sites qui</span>
+                <span class="line em">marquent.</span>
             </h1>
-            <p class="hero-sub fade-up delay-2">Développement · Technologie · Informatique</p>
-            <div class="hero-actions fade-up delay-3">
-                <a href="#contact" class="btn-glow">Me contacter</a>
-                <a href="#projects" class="btn-ghost">Projets &darr;</a>
-            </div>
+            <p class="reveal d1">Design moderne, code propre, résultat professionnel.</p>
+            <a href="#contact" class="btn reveal d2">Démarrer un projet</a>
         </div>
-        <div class="scroll-indicator fade-up delay-4">
-            <div class="mouse">
-                <div class="wheel"></div>
+        <div class="hero-devices reveal d2">
+            <div class="device-desktop">
+                <div class="device-bar">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="device-screen desktop-screen">
+                    <div class="mock-hero-img"></div>
+                    <div class="mock-text-block">
+                        <div class="mock-line w80"></div>
+                        <div class="mock-line w60"></div>
+                    </div>
+                    <div class="mock-grid">
+                        <div class="mock-card"></div>
+                        <div class="mock-card"></div>
+                        <div class="mock-card"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="section-header reveal">
-            <span class="section-number">01</span>
-            <h2>À propos</h2>
-        </div>
-        <div class="about-content reveal">
-            <p class="big-text">J'ai <strong>17 ans</strong>, je vis à <strong>Nantes</strong>, et je suis passionné par tout ce qui touche à la <strong>technologie</strong>.</p>
-            <p>Je code, j'expérimente, j'apprends. Du développement web à l'intelligence artificielle, je construis des choses concrètes avec du code.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <div class="section-header reveal">
-            <span class="section-number">02</span>
-            <h2>Skills</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card reveal">
-                <span class="skill-emoji">🌐</span>
-                <h3>Web</h3>
-                <p>HTML · CSS · JavaScript · React</p>
-            </div>
-            <div class="skill-card reveal delay-1">
-                <span class="skill-emoji">⚡</span>
-                <h3>Automatisation</h3>
-                <p>Python · Bash · APIs · Scripts</p>
-            </div>
-            <div class="skill-card reveal delay-2">
-                <span class="skill-emoji">🧠</span>
-                <h3>IA</h3>
-                <p>Claude · GPT · Agents · Prompting</p>
-            </div>
-            <div class="skill-card reveal delay-3">
-                <span class="skill-emoji">🖥️</span>
-                <h3>Systèmes</h3>
-                <p>Linux · macOS · Git · Terminal</p>
+            <div class="device-phone">
+                <div class="device-screen phone-screen">
+                    <div class="mock-phone-hero"></div>
+                    <div class="mock-text-block">
+                        <div class="mock-line w80"></div>
+                        <div class="mock-line w50"></div>
+                    </div>
+                    <div class="mock-phone-block"></div>
+                    <div class="mock-phone-block short"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <div class="section-header reveal">
-            <span class="section-number">03</span>
-            <h2>Projets</h2>
+    <!-- MARQUEE -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>Design</span><span>·</span>
+            <span>Développement</span><span>·</span>
+            <span>Responsive</span><span>·</span>
+            <span>Performance</span><span>·</span>
+            <span>SEO</span><span>·</span>
+            <span>Design</span><span>·</span>
+            <span>Développement</span><span>·</span>
+            <span>Responsive</span><span>·</span>
+            <span>Performance</span><span>·</span>
+            <span>SEO</span><span>·</span>
         </div>
-        <div class="projects-list">
-            <a href="#" class="project-row reveal">
-                <span class="project-name">Portfolio</span>
-                <span class="project-desc">Ce site — design, animations, code from scratch</span>
-                <span class="project-tag">Live</span>
-            </a>
-            <a href="#" class="project-row reveal delay-1">
-                <span class="project-name">Projets IA</span>
-                <span class="project-desc">Agents, automatisations, intégrations API</span>
-                <span class="project-tag">En cours</span>
-            </a>
-            <a href="#" class="project-row reveal delay-2">
-                <span class="project-name">À venir...</span>
-                <span class="project-desc">Toujours en train de construire</span>
-                <span class="project-tag soon">Soon</span>
-            </a>
+    </div>
+
+    <!-- SHOWCASE -->
+    <section id="work" class="showcase">
+        <div class="section-intro reveal">
+            <span class="label">Réalisations</span>
+            <h2>Chaque site est unique,<br>comme votre activité.</h2>
+        </div>
+        <div class="showcase-grid">
+            <div class="showcase-item reveal">
+                <div class="browser-frame">
+                    <div class="browser-dots"><span></span><span></span><span></span></div>
+                    <div class="browser-content theme-restaurant">
+                        <div class="sc-nav">
+                            <div class="mock-line w30 light"></div>
+                            <div class="sc-nav-links"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="sc-hero-area">
+                            <div class="sc-big-text"></div>
+                            <div class="sc-big-text short"></div>
+                            <div class="sc-btn-mock"></div>
+                        </div>
+                        <div class="sc-img-grid">
+                            <div class="sc-img"></div>
+                            <div class="sc-img"></div>
+                            <div class="sc-img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-label">
+                    <h3>Restaurant & Food</h3>
+                    <p>Site vitrine avec menu et réservation</p>
+                </div>
+            </div>
+            <div class="showcase-item reveal d1">
+                <div class="browser-frame">
+                    <div class="browser-dots"><span></span><span></span><span></span></div>
+                    <div class="browser-content theme-studio">
+                        <div class="sc-split">
+                            <div class="sc-split-img"></div>
+                            <div class="sc-split-text">
+                                <div class="mock-line w80 light"></div>
+                                <div class="mock-line w60 light"></div>
+                                <div class="sc-btn-mock small"></div>
+                            </div>
+                        </div>
+                        <div class="sc-gallery">
+                            <div class="sc-gal-item"></div>
+                            <div class="sc-gal-item"></div>
+                            <div class="sc-gal-item"></div>
+                            <div class="sc-gal-item"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-label">
+                    <h3>Studio & Créatif</h3>
+                    <p>Portfolio élégant avec galerie</p>
+                </div>
+            </div>
+            <div class="showcase-item full reveal d2">
+                <div class="browser-frame wide">
+                    <div class="browser-dots"><span></span><span></span><span></span></div>
+                    <div class="browser-content theme-saas">
+                        <div class="sc-nav">
+                            <div class="mock-line w20 light"></div>
+                            <div class="sc-nav-links"><span></span><span></span><span></span><span class="sc-nav-btn"></span></div>
+                        </div>
+                        <div class="sc-center-hero">
+                            <div class="sc-big-text center"></div>
+                            <div class="sc-big-text short center"></div>
+                            <div class="mock-line w40 light center-line"></div>
+                            <div class="sc-btn-row">
+                                <div class="sc-btn-mock"></div>
+                                <div class="sc-btn-mock outline"></div>
+                            </div>
+                        </div>
+                        <div class="sc-features">
+                            <div class="sc-feature-card"></div>
+                            <div class="sc-feature-card"></div>
+                            <div class="sc-feature-card"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-label">
+                    <h3>Business & Services</h3>
+                    <p>Landing page professionnelle et moderne</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- SERVICES -->
+    <section id="services" class="services">
+        <div class="section-intro reveal">
+            <span class="label">Services</span>
+            <h2>Tout ce qu'il faut pour<br>être visible en ligne.</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-number">01</div>
+                <h3>Design sur-mesure</h3>
+                <p>Un design unique qui reflète votre identité. Pas de templates génériques.</p>
+            </div>
+            <div class="service-card reveal d1">
+                <div class="service-number">02</div>
+                <h3>Responsive</h3>
+                <p>Parfait sur mobile, tablette et desktop. Chaque pixel est pensé.</p>
+            </div>
+            <div class="service-card reveal d2">
+                <div class="service-number">03</div>
+                <h3>Rapide & optimisé</h3>
+                <p>Code léger, temps de chargement minimal, bon référencement Google.</p>
+            </div>
+            <div class="service-card reveal d3">
+                <div class="service-number">04</div>
+                <h3>Clé en main</h3>
+                <p>Je m'occupe de tout : design, code, mise en ligne. Vous n'avez rien à faire.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / CONTACT -->
     <section id="contact" class="contact">
-        <div class="section-header reveal">
-            <span class="section-number">04</span>
-            <h2>Contact</h2>
-        </div>
-        <div class="contact-content reveal">
-            <p class="big-text">Un projet ou une idée ?<br>Discutons.</p>
-            <div class="contact-links">
-                <a href="mailto:matthieurabreau@gmail.com" class="contact-link">
-                    <span>Email</span>
-                    <span class="link-value">matthieurabreau@gmail.com</span>
-                </a>
-                <a href="https://github.com/matthieurabreau" target="_blank" class="contact-link">
-                    <span>GitHub</span>
-                    <span class="link-value">matthieurabreau</span>
-                </a>
-            </div>
+        <div class="contact-box reveal">
+            <span class="label">Contact</span>
+            <h2>Votre projet<br>commence ici.</h2>
+            <p>Envoyez-moi un message et recevez une réponse sous 24h.</p>
+            <a href="mailto:matthieurabreau@gmail.com" class="btn btn-lg">matthieurabreau@gmail.com</a>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Matthieu Rabreau</p>
+        <div class="footer-inner">
+            <span>© 2026 Matthieu Rabreau</span>
+            <a href="https://github.com/matthieurabreau" target="_blank">GitHub</a>
+        </div>
     </footer>
 
     <script>
-        // Scroll reveal
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                 }
             });
-        }, { threshold: 0.15 });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-        document.querySelectorAll('.reveal, .fade-up').forEach(el => observer.observe(el));
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // Parallax orbs on mouse move
-        document.addEventListener('mousemove', (e) => {
-            const x = (e.clientX / window.innerWidth - 0.5) * 2;
-            const y = (e.clientY / window.innerHeight - 0.5) * 2;
-            document.querySelector('.orb-1').style.transform = `translate(${x * 30}px, ${y * 30}px)`;
-            document.querySelector('.orb-2').style.transform = `translate(${x * -20}px, ${y * -20}px)`;
-            document.querySelector('.orb-3').style.transform = `translate(${x * 15}px, ${y * 15}px)`;
-        });
-
-        // Smooth nav background
+        // Parallax on devices
         window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            nav.classList.toggle('scrolled', window.scrollY > 50);
+            const scrollY = window.scrollY;
+            const desktop = document.querySelector('.device-desktop');
+            const phone = document.querySelector('.device-phone');
+            if (desktop && phone) {
+                desktop.style.transform = `translateY(${scrollY * -0.08}px)`;
+                phone.style.transform = `translateY(${scrollY * -0.14}px) translateX(10px)`;
+            }
+
+            // Nav style
+            document.querySelector('nav').classList.toggle('scrolled', scrollY > 60);
         });
     </script>
 </body>
