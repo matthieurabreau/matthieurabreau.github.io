@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthieu Rabreau — Création de sites web</title>
-    <meta name="description" content="Création de sites web modernes et professionnels.">
+    <meta name="description" content="Création de sites web modernes et professionnels pour commerces et entreprises.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Floating background shapes -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
 
     <nav>
         <span class="nav-logo">MR</span>
@@ -24,41 +32,30 @@
     <!-- HERO -->
     <section class="hero">
         <div class="hero-text">
-            <h1 class="reveal">
-                <span class="line">Des sites qui</span>
-                <span class="line em">marquent.</span>
-            </h1>
-            <p class="reveal d1">Design moderne, code propre, résultat professionnel.</p>
-            <a href="#contact" class="btn reveal d2">Démarrer un projet</a>
-        </div>
-        <div class="hero-devices reveal d2">
-            <div class="device-desktop">
-                <div class="device-bar">
-                    <span></span><span></span><span></span>
-                </div>
-                <div class="device-screen desktop-screen">
-                    <div class="mock-hero-img"></div>
-                    <div class="mock-text-block">
-                        <div class="mock-line w80"></div>
-                        <div class="mock-line w60"></div>
-                    </div>
-                    <div class="mock-grid">
-                        <div class="mock-card"></div>
-                        <div class="mock-card"></div>
-                        <div class="mock-card"></div>
-                    </div>
-                </div>
+            <div class="hero-badge reveal">
+                <span class="dot"></span>
+                Disponible pour nouveaux projets
             </div>
-            <div class="device-phone">
-                <div class="device-screen phone-screen">
-                    <div class="mock-phone-hero"></div>
-                    <div class="mock-text-block">
-                        <div class="mock-line w80"></div>
-                        <div class="mock-line w50"></div>
-                    </div>
-                    <div class="mock-phone-block"></div>
-                    <div class="mock-phone-block short"></div>
-                </div>
+            <h1 class="reveal d1">
+                <span class="line">Je crée des sites</span>
+                <span class="line">web <span class="em">professionnels</span></span>
+                <span class="line">pour votre activité.</span>
+            </h1>
+            <p class="reveal d2">Vous êtes restaurateur, artisan, coach ou commerçant ?<br>Je transforme votre activité en un site moderne qui attire des clients.</p>
+            <div class="hero-btns reveal d3">
+                <a href="#contact" class="btn">Créer mon site</a>
+                <a href="#work" class="btn-outline">Voir des exemples &darr;</a>
+            </div>
+        </div>
+        <div class="hero-images reveal d2">
+            <div class="hero-img main-img">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=600&q=80" alt="Workspace design">
+            </div>
+            <div class="hero-img float-img">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80" alt="Web analytics">
+            </div>
+            <div class="hero-img small-img">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=300&q=80" alt="Mobile design">
             </div>
         </div>
     </section>
@@ -66,16 +63,18 @@
     <!-- MARQUEE -->
     <div class="marquee">
         <div class="marquee-track">
-            <span>Design</span><span>·</span>
-            <span>Développement</span><span>·</span>
-            <span>Responsive</span><span>·</span>
-            <span>Performance</span><span>·</span>
-            <span>SEO</span><span>·</span>
-            <span>Design</span><span>·</span>
-            <span>Développement</span><span>·</span>
-            <span>Responsive</span><span>·</span>
-            <span>Performance</span><span>·</span>
-            <span>SEO</span><span>·</span>
+            <span>Design</span><span class="sep">✦</span>
+            <span>Développement</span><span class="sep">✦</span>
+            <span>Responsive</span><span class="sep">✦</span>
+            <span>Performance</span><span class="sep">✦</span>
+            <span>SEO</span><span class="sep">✦</span>
+            <span>Sur-mesure</span><span class="sep">✦</span>
+            <span>Design</span><span class="sep">✦</span>
+            <span>Développement</span><span class="sep">✦</span>
+            <span>Responsive</span><span class="sep">✦</span>
+            <span>Performance</span><span class="sep">✦</span>
+            <span>SEO</span><span class="sep">✦</span>
+            <span>Sur-mesure</span><span class="sep">✦</span>
         </div>
     </div>
 
@@ -83,161 +82,168 @@
     <section id="work" class="showcase">
         <div class="section-intro reveal">
             <span class="label">Réalisations</span>
-            <h2>Chaque site est unique,<br>comme votre activité.</h2>
+            <h2>Un aperçu de ce que<br>je peux créer pour vous.</h2>
+            <p class="section-desc">Chaque site est conçu sur-mesure pour refléter votre identité et attirer vos clients.</p>
         </div>
+
         <div class="showcase-grid">
+            <!-- Item 1 -->
             <div class="showcase-item reveal">
-                <div class="browser-frame">
-                    <div class="browser-dots"><span></span><span></span><span></span></div>
-                    <div class="browser-content theme-restaurant">
-                        <div class="sc-nav">
-                            <div class="mock-line w30 light"></div>
-                            <div class="sc-nav-links"><span></span><span></span><span></span></div>
-                        </div>
-                        <div class="sc-hero-area">
-                            <div class="sc-big-text"></div>
-                            <div class="sc-big-text short"></div>
-                            <div class="sc-btn-mock"></div>
-                        </div>
-                        <div class="sc-img-grid">
-                            <div class="sc-img"></div>
-                            <div class="sc-img"></div>
-                            <div class="sc-img"></div>
-                        </div>
+                <div class="showcase-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80" alt="Restaurant intérieur">
+                    <div class="showcase-overlay">
+                        <span class="overlay-tag">Restaurant</span>
                     </div>
                 </div>
-                <div class="showcase-label">
+                <div class="showcase-info">
                     <h3>Restaurant & Food</h3>
-                    <p>Site vitrine avec menu et réservation</p>
+                    <p>Menu en ligne, photos, réservation — un site qui donne envie de pousser la porte.</p>
                 </div>
             </div>
+
+            <!-- Item 2 -->
             <div class="showcase-item reveal d1">
-                <div class="browser-frame">
-                    <div class="browser-dots"><span></span><span></span><span></span></div>
-                    <div class="browser-content theme-studio">
-                        <div class="sc-split">
-                            <div class="sc-split-img"></div>
-                            <div class="sc-split-text">
-                                <div class="mock-line w80 light"></div>
-                                <div class="mock-line w60 light"></div>
-                                <div class="sc-btn-mock small"></div>
-                            </div>
-                        </div>
-                        <div class="sc-gallery">
-                            <div class="sc-gal-item"></div>
-                            <div class="sc-gal-item"></div>
-                            <div class="sc-gal-item"></div>
-                            <div class="sc-gal-item"></div>
-                        </div>
+                <div class="showcase-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700&q=80" alt="Salon de beauté">
+                    <div class="showcase-overlay">
+                        <span class="overlay-tag">Bien-être</span>
                     </div>
                 </div>
-                <div class="showcase-label">
-                    <h3>Studio & Créatif</h3>
-                    <p>Portfolio élégant avec galerie</p>
+                <div class="showcase-info">
+                    <h3>Salon & Bien-être</h3>
+                    <p>Coiffeur, spa, coach — montrez votre savoir-faire et facilitez la prise de rendez-vous.</p>
                 </div>
             </div>
-            <div class="showcase-item full reveal d2">
-                <div class="browser-frame wide">
-                    <div class="browser-dots"><span></span><span></span><span></span></div>
-                    <div class="browser-content theme-saas">
-                        <div class="sc-nav">
-                            <div class="mock-line w20 light"></div>
-                            <div class="sc-nav-links"><span></span><span></span><span></span><span class="sc-nav-btn"></span></div>
-                        </div>
-                        <div class="sc-center-hero">
-                            <div class="sc-big-text center"></div>
-                            <div class="sc-big-text short center"></div>
-                            <div class="mock-line w40 light center-line"></div>
-                            <div class="sc-btn-row">
-                                <div class="sc-btn-mock"></div>
-                                <div class="sc-btn-mock outline"></div>
-                            </div>
-                        </div>
-                        <div class="sc-features">
-                            <div class="sc-feature-card"></div>
-                            <div class="sc-feature-card"></div>
-                            <div class="sc-feature-card"></div>
-                        </div>
+
+            <!-- Item 3 - Full width -->
+            <div class="showcase-item wide reveal d1">
+                <div class="showcase-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80" alt="Bureau moderne">
+                    <div class="showcase-overlay">
+                        <span class="overlay-tag">Business</span>
                     </div>
                 </div>
-                <div class="showcase-label">
+                <div class="showcase-info">
                     <h3>Business & Services</h3>
-                    <p>Landing page professionnelle et moderne</p>
+                    <p>Artisan, consultant, freelance — une landing page pro qui inspire confiance et génère des contacts.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- FEATURES BAND -->
+    <div class="features-band">
+        <div class="features-inner">
+            <div class="feature reveal">
+                <span class="feature-num">100%</span>
+                <span class="feature-label">Sur-mesure</span>
+            </div>
+            <div class="feature reveal d1">
+                <span class="feature-num">&lt;2s</span>
+                <span class="feature-label">Temps de chargement</span>
+            </div>
+            <div class="feature reveal d2">
+                <span class="feature-num">24h</span>
+                <span class="feature-label">Temps de réponse</span>
+            </div>
+            <div class="feature reveal d3">
+                <span class="feature-num">0€</span>
+                <span class="feature-label">Le devis</span>
+            </div>
+        </div>
+    </div>
 
     <!-- SERVICES -->
     <section id="services" class="services">
         <div class="section-intro reveal">
-            <span class="label">Services</span>
-            <h2>Tout ce qu'il faut pour<br>être visible en ligne.</h2>
+            <span class="label">Comment ça marche</span>
+            <h2>Simple, rapide,<br>clé en main.</h2>
         </div>
-        <div class="services-grid">
-            <div class="service-card reveal">
-                <div class="service-number">01</div>
-                <h3>Design sur-mesure</h3>
-                <p>Un design unique qui reflète votre identité. Pas de templates génériques.</p>
+        <div class="steps">
+            <div class="step reveal">
+                <div class="step-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1531498860502-7c67cf02f657?w=500&q=80" alt="Discussion">
+                </div>
+                <div class="step-content">
+                    <span class="step-num">01</span>
+                    <h3>On discute de votre projet</h3>
+                    <p>Vous m'expliquez votre activité et vos besoins. Je vous propose une solution adaptée et un devis gratuit.</p>
+                </div>
             </div>
-            <div class="service-card reveal d1">
-                <div class="service-number">02</div>
-                <h3>Responsive</h3>
-                <p>Parfait sur mobile, tablette et desktop. Chaque pixel est pensé.</p>
+            <div class="step reverse reveal d1">
+                <div class="step-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500&q=80" alt="Design web">
+                </div>
+                <div class="step-content">
+                    <span class="step-num">02</span>
+                    <h3>Je crée votre site</h3>
+                    <p>Design sur-mesure, responsive, optimisé. Vous validez chaque étape avant la mise en ligne.</p>
+                </div>
             </div>
-            <div class="service-card reveal d2">
-                <div class="service-number">03</div>
-                <h3>Rapide & optimisé</h3>
-                <p>Code léger, temps de chargement minimal, bon référencement Google.</p>
-            </div>
-            <div class="service-card reveal d3">
-                <div class="service-number">04</div>
-                <h3>Clé en main</h3>
-                <p>Je m'occupe de tout : design, code, mise en ligne. Vous n'avez rien à faire.</p>
+            <div class="step reveal d2">
+                <div class="step-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&q=80" alt="Livraison">
+                </div>
+                <div class="step-content">
+                    <span class="step-num">03</span>
+                    <h3>Votre site est en ligne</h3>
+                    <p>Publication, référencement, et c'est parti. Vos futurs clients vous trouvent sur Google.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA / CONTACT -->
+    <!-- CTA -->
     <section id="contact" class="contact">
-        <div class="contact-box reveal">
-            <span class="label">Contact</span>
-            <h2>Votre projet<br>commence ici.</h2>
-            <p>Envoyez-moi un message et recevez une réponse sous 24h.</p>
-            <a href="mailto:matthieurabreau@gmail.com" class="btn btn-lg">matthieurabreau@gmail.com</a>
+        <div class="contact-bg">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&q=80" alt="Collaboration">
+        </div>
+        <div class="contact-content reveal">
+            <span class="label light">Prêt ?</span>
+            <h2>Créons votre site<br>ensemble.</h2>
+            <p>Décrivez-moi votre projet — je vous réponds sous 24h avec une proposition.</p>
+            <a href="mailto:matthieurabreau@gmail.com" class="btn btn-white">matthieurabreau@gmail.com</a>
         </div>
     </section>
 
     <footer>
         <div class="footer-inner">
-            <span>© 2026 Matthieu Rabreau</span>
+            <span>© 2026 Matthieu Rabreau — Nantes</span>
             <a href="https://github.com/matthieurabreau" target="_blank">GitHub</a>
         </div>
     </footer>
 
     <script>
+        // Scroll reveal
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('visible');
             });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // Parallax on devices
+        // Parallax images hero
         window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            const desktop = document.querySelector('.device-desktop');
-            const phone = document.querySelector('.device-phone');
-            if (desktop && phone) {
-                desktop.style.transform = `translateY(${scrollY * -0.08}px)`;
-                phone.style.transform = `translateY(${scrollY * -0.14}px) translateX(10px)`;
-            }
+            const s = window.scrollY;
+            const main = document.querySelector('.main-img');
+            const fl = document.querySelector('.float-img');
+            const sm = document.querySelector('.small-img');
+            if (main) main.style.transform = `translateY(${s * -0.06}px)`;
+            if (fl) fl.style.transform = `translate(10px, ${s * -0.12}px) rotate(-3deg)`;
+            if (sm) sm.style.transform = `translate(-5px, ${s * -0.09}px) rotate(2deg)`;
 
-            // Nav style
-            document.querySelector('nav').classList.toggle('scrolled', scrollY > 60);
+            // Nav
+            document.querySelector('nav').classList.toggle('scrolled', s > 60);
+        });
+
+        // Mouse parallax on bg shapes
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5);
+            const y = (e.clientY / window.innerHeight - 0.5);
+            document.querySelectorAll('.shape').forEach((s, i) => {
+                const speed = (i + 1) * 15;
+                s.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
         });
     </script>
 </body>
